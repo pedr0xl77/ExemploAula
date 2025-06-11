@@ -34,6 +34,9 @@
             txtSenha = new TextBox();
             btnLogar = new Button();
             lblLogin = new Label();
+            menuStrip1 = new MenuStrip();
+            mstiSair = new ToolStripMenuItem();
+            menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // lblUsuario
@@ -95,6 +98,23 @@
             lblLogin.TabIndex = 5;
             lblLogin.Text = "Login";
             // 
+            // menuStrip1
+            // 
+            menuStrip1.Items.AddRange(new ToolStripItem[] { mstiSair });
+            menuStrip1.Location = new Point(0, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Size = new Size(800, 33);
+            menuStrip1.TabIndex = 6;
+            menuStrip1.Text = "menuStrip1";
+            // 
+            // mstiSair
+            // 
+            mstiSair.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            mstiSair.Name = "mstiSair";
+            mstiSair.Size = new Size(58, 29);
+            mstiSair.Text = "Sair";
+            mstiSair.Click += mstiSair_Click;
+            // 
             // frmLogin
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -106,9 +126,13 @@
             Controls.Add(txtUsuario);
             Controls.Add(lblSenha);
             Controls.Add(lblUsuario);
+            Controls.Add(menuStrip1);
+            MainMenuStrip = menuStrip1;
             Name = "frmLogin";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -121,5 +145,7 @@
         private TextBox txtSenha;
         private Button btnLogar;
         private Label lblLogin;
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem mstiSair;
     }
 }

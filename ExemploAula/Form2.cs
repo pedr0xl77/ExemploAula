@@ -16,5 +16,17 @@ namespace ExemploAula
         {
             InitializeComponent();
         }
+
+        private void btnDeslogar_Click(object sender, EventArgs e)
+        {
+            frmLogin login = new frmLogin();
+            Hide();
+            login.Show();
+        }
+
+        private void sairToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
