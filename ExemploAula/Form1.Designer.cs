@@ -1,6 +1,6 @@
 ﻿namespace ExemploAula
 {
-    partial class Form1
+    partial class frmLogin
     {
         /// <summary>
         ///  Required designer variable.
@@ -70,6 +70,7 @@
             txtSenha.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             txtSenha.Location = new Point(291, 225);
             txtSenha.Name = "txtSenha";
+            txtSenha.PasswordChar = '*';
             txtSenha.Size = new Size(329, 33);
             txtSenha.TabIndex = 3;
             // 
@@ -82,6 +83,7 @@
             btnLogar.TabIndex = 4;
             btnLogar.Text = "Logar";
             btnLogar.UseVisualStyleBackColor = true;
+            btnLogar.Click += btnLogar_Click;
             // 
             // lblLogin
             // 
@@ -93,7 +95,7 @@
             lblLogin.TabIndex = 5;
             lblLogin.Text = "Login";
             // 
-            // Form1
+            // frmLogin
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -104,7 +106,7 @@
             Controls.Add(txtUsuario);
             Controls.Add(lblSenha);
             Controls.Add(lblUsuario);
-            Name = "Form1";
+            Name = "frmLogin";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
             ResumeLayout(false);
