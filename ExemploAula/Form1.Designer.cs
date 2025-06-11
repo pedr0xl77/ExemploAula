@@ -31,27 +31,29 @@
             lblUsuario = new Label();
             lblSenha = new Label();
             txtUsuario = new TextBox();
+            txtSenha = new TextBox();
             SuspendLayout();
             // 
             // lblUsuario
             // 
             lblUsuario.AutoSize = true;
             lblUsuario.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblUsuario.Location = new Point(183, 83);
+            lblUsuario.Location = new Point(196, 88);
             lblUsuario.Name = "lblUsuario";
-            lblUsuario.Size = new Size(84, 25);
+            lblUsuario.Size = new Size(86, 25);
             lblUsuario.TabIndex = 0;
-            lblUsuario.Text = "usuario:";
+            lblUsuario.Text = "Usuario:";
             // 
             // lblSenha
             // 
             lblSenha.AutoSize = true;
             lblSenha.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblSenha.Location = new Point(183, 160);
+            lblSenha.Location = new Point(196, 173);
             lblSenha.Name = "lblSenha";
             lblSenha.Size = new Size(71, 25);
             lblSenha.TabIndex = 1;
             lblSenha.Text = "Senha:";
+            lblSenha.Click += lblSenha_Click;
             // 
             // txtUsuario
             // 
@@ -61,11 +63,20 @@
             txtUsuario.Size = new Size(329, 33);
             txtUsuario.TabIndex = 2;
             // 
+            // txtSenha
+            // 
+            txtSenha.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtSenha.Location = new Point(291, 170);
+            txtSenha.Name = "txtSenha";
+            txtSenha.Size = new Size(329, 33);
+            txtSenha.TabIndex = 3;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(txtSenha);
             Controls.Add(txtUsuario);
             Controls.Add(lblSenha);
             Controls.Add(lblUsuario);
@@ -81,5 +92,6 @@
         private Label lblUsuario;
         private Label lblSenha;
         private TextBox txtUsuario;
+        private TextBox txtSenha;
     }
 }
