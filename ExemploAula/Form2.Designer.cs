@@ -72,7 +72,7 @@
             MainMenuStrip = mstiSair;
             Name = "frmMenu";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Form2";
+            Text = "Menu";
             mstiSair.ResumeLayout(false);
             mstiSair.PerformLayout();
             ResumeLayout(false);

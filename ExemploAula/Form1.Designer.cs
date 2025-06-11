@@ -62,6 +62,7 @@
             // 
             // txtUsuario
             // 
+            txtUsuario.Cursor = Cursors.IBeam;
             txtUsuario.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             txtUsuario.Location = new Point(291, 140);
             txtUsuario.Name = "txtUsuario";
@@ -70,6 +71,7 @@
             // 
             // txtSenha
             // 
+            txtSenha.Cursor = Cursors.IBeam;
             txtSenha.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             txtSenha.Location = new Point(291, 225);
             txtSenha.Name = "txtSenha";
@@ -79,6 +81,7 @@
             // 
             // btnLogar
             // 
+            btnLogar.Cursor = Cursors.Hand;
             btnLogar.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnLogar.Location = new Point(364, 342);
             btnLogar.Name = "btnLogar";
@@ -130,7 +133,7 @@
             MainMenuStrip = menuStrip1;
             Name = "frmLogin";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Form1";
+            Text = "Login";
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             ResumeLayout(false);
