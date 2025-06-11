@@ -32,13 +32,14 @@
             lblSenha = new Label();
             txtUsuario = new TextBox();
             txtSenha = new TextBox();
+            btnLogar = new Button();
             SuspendLayout();
             // 
             // lblUsuario
             // 
             lblUsuario.AutoSize = true;
             lblUsuario.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblUsuario.Location = new Point(196, 88);
+            lblUsuario.Location = new Point(196, 143);
             lblUsuario.Name = "lblUsuario";
             lblUsuario.Size = new Size(86, 25);
             lblUsuario.TabIndex = 0;
@@ -48,7 +49,7 @@
             // 
             lblSenha.AutoSize = true;
             lblSenha.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblSenha.Location = new Point(196, 173);
+            lblSenha.Location = new Point(196, 228);
             lblSenha.Name = "lblSenha";
             lblSenha.Size = new Size(71, 25);
             lblSenha.TabIndex = 1;
@@ -58,7 +59,7 @@
             // txtUsuario
             // 
             txtUsuario.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            txtUsuario.Location = new Point(291, 85);
+            txtUsuario.Location = new Point(291, 140);
             txtUsuario.Name = "txtUsuario";
             txtUsuario.Size = new Size(329, 33);
             txtUsuario.TabIndex = 2;
@@ -66,16 +67,27 @@
             // txtSenha
             // 
             txtSenha.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            txtSenha.Location = new Point(291, 170);
+            txtSenha.Location = new Point(291, 225);
             txtSenha.Name = "txtSenha";
             txtSenha.Size = new Size(329, 33);
             txtSenha.TabIndex = 3;
+            // 
+            // btnLogar
+            // 
+            btnLogar.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnLogar.Location = new Point(364, 342);
+            btnLogar.Name = "btnLogar";
+            btnLogar.Size = new Size(173, 48);
+            btnLogar.TabIndex = 4;
+            btnLogar.Text = "Logar";
+            btnLogar.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnLogar);
             Controls.Add(txtSenha);
             Controls.Add(txtUsuario);
             Controls.Add(lblSenha);
@@ -93,5 +105,6 @@
         private Label lblSenha;
         private TextBox txtUsuario;
         private TextBox txtSenha;
+        private Button btnLogar;
     }
 }
