@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             lblUsuario = new Label();
+            lblSenha = new Label();
             SuspendLayout();
             // 
             // lblUsuario
@@ -41,11 +42,22 @@
             lblUsuario.TabIndex = 0;
             lblUsuario.Text = "usuario:";
             // 
+            // lblSenha
+            // 
+            lblSenha.AutoSize = true;
+            lblSenha.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblSenha.Location = new Point(183, 160);
+            lblSenha.Name = "lblSenha";
+            lblSenha.Size = new Size(71, 25);
+            lblSenha.TabIndex = 1;
+            lblSenha.Text = "Senha:";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(lblSenha);
             Controls.Add(lblUsuario);
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
@@ -57,5 +69,6 @@
         #endregion
 
         private Label lblUsuario;
+        private Label lblSenha;
     }
 }
